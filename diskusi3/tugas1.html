@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tugas1</title>
+    <style>
+        table.table2{
+            background-color: #ADFF2F; 
+        }
+    </style>
+</head>
+<body>
+<h1>Nomor 1</h1>
+<table border="1">
+    <tr>
+        <td colspan="3">Ini Adalah tabel Pangkat</td>
+    </tr>
+    <tr>
+        <td>Nim</td>
+        <td>:</td>
+        <td>042209191</td>
+    </tr>
+    <tr>
+        <td>Nama</td>
+        <td>:</td>
+        <td>Fiky Baharudin</td>
+    </tr>
+    <tr>
+        <td>Contoh Pangkat</td>
+        <td colspan="2">1. 2<sup>3</sup> = 8 <br>
+        2. 3<sup>3</sup> = 27</td>
+    </tr>
+</table>
+<h1>Nomor 2</h1>
+<table class="table2">
+    <tr>
+        <td colspan="3">Ini adalah contoh implementasi css dalam table</td>
+    </tr>
+    <tr>
+        <td>Nim</td>
+        <td>:</td>
+        <td><input type="text"></td>
+    </tr>
+    <tr>
+        <td>Nama</td>
+        <td>:</td>
+        <td><input type="text"></td>
+    </tr>
+    <tr>
+        <td>Alamat</td>
+        <td>:</td>
+        <td><textarea name="alamat" id="" cols="30" rows="10"></textarea></td>
+    </tr>
+    <tr>
+        <td>Password</td>
+        <td>:</td>
+        <td><input type="password"></td>
+    </tr>
+</table>
+<h1>Nomor 3</h1>
+<div id="nomor3"></div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js" integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>  
+<script>
+    $(document).ready(function() {
+      var i = 1;
+    
+      while (i <= 20) {
+        var print = document.createElement("p");
+        if (i % 2 == 0) {
+          console.log(i + ". Pasien Ke " + i + "=Klinik A");
+          print.innerHTML = i + ". Pasien Ke " + i + "=Klinik A";
+          $('#nomor3').append(print);
+          i++;
+        } else {
+          console.log(i + ". Pasien Ke " + i + "=Klinik B");
+          print.innerHTML = i + ". Pasien Ke " + i + "=Klinik B";
+          $('#nomor3').append(print);
+          i++;
+        }
+      }
+    });
+    </script>
+</body>
+</html>

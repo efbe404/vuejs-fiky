@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vbind dan VModel dengan VueJS</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<h1>VBind 7 Vmodel VueJS</h1>
+<div id="app">
+<h2>{{ judul }}</h2>
+<img :src="image" alt="{{judul}}" @click="gambarClick()">
+<p>{{ creditimage }}</p>
+
+<h2>{{ judul2 }}</h2>
+<input type="text" name="dariInput" v-model="inputText">
+<p>Text dari Input diatas adalah : {{ inputText }}</p>
+</div>
+<script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+<script>
+let apl = Vue.createApp({
+data: function(){
+        return {
+            judul: "ini Gambar yang tampil dengan Vbind",
+            judul2: "ini Form Input yang tampil dengan VModel",
+            image: "kobokan.webp",
+            inputText: "",
+            creditimage: ""
+        };
+    },
+    methods: {
+        gambarClick(){
+        this.creditimage = "KOBO KANAERU";
+        }
+    }
+})
+
+apl.mount('#app')
+</script>
+</body>
+</html>

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Operasi Aritmatika dengan VueJS</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<h2>Operasi Aritmatika</h2>
+<div id="app">
+<table class="table-custom">
+    <tr>
+        <td class="label">Penjumlahan</td>
+        <td>( {{ a }} + {{ b }} )</td>
+        <td> = </td>
+        <td>{{ penjumlahan }}</td>
+    </tr>
+    <tr>
+        <td class="label">Pengurangan</td>
+        <td>( {{ a }} - {{ b }} )</td>
+        <td> = </td>
+        <td>{{ pengurangan }}</td>
+    </tr>
+    <tr>
+        <td class="label">Perkalian</td>
+        <td>( {{ a }} x {{ b }} )</td>
+        <td> = </td>
+        <td>{{ perkalian }}</td>
+    </tr>
+    <tr>
+        <td class="label">Pembagian</td>
+        <td>( {{ a }} / {{ b }} )</td>
+        <td> = </td>
+        <td>{{ pembagian }}</td>
+    </tr>
+</table>
+</div>
+<script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+<script>
+let apl = Vue.createApp({
+data: function(){
+        return {
+            a:6,
+            b:5,
+        };
+    },
+    computed: {
+        penjumlahan(){
+            return this.a+this.b;
+        },
+        pengurangan(){
+            return this.a-this.b;
+        },
+        perkalian(){
+            return this.a*this.b;
+        },
+        pembagian(){
+            return this.a/this.b;
+        }
+    }
+
+})
+
+apl.mount('#app')
+</script>
+</body>
+</html>

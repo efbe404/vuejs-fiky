@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register Anggota Baru</title>
+    <link rel="stylesheet" href="stail.css">
+</head>
+<body>
+<h2>Register Anggota Baru</h2>
+<table class="form">
+<form method="post" action="index.html"></form>
+    <tr>
+        <td class="label">Nama Lengkap</td>
+        <td>:</td>
+        <td><input type="text" name="namalengkap" class="form-control"></td>
+    </tr>
+    <tr>
+        <td class="label">Nama Panggilan</td>
+        <td>:</td>
+        <td><input type="text" name="namapanggilan" class="form-control"></td>
+    </tr>
+    <tr>
+        <td class="label">Tempat Kelahiran</td>
+        <td>:</td>
+        <td><input type="text" name="tempatlahir" class="form-control"></td>
+    </tr>
+    <tr>
+        <td class="label">Tanggal Lahir</td>
+        <td>:</td>
+        <td><input type="date" name="tanggallahir" class="form-control"></td>
+    </tr>
+    <tr>
+        <td class="label">Jenis Kelamin</td>
+        <td>:</td>
+        <td>
+            <input type="radio"  name="jk" class="form-control" value="1"> Laki Laki <input type="radio" name="jk" class="form-control" value="0">Perempuan
+        </td>
+    </tr>
+    <tr>
+        <td class="label">Alamat</td>
+        <td>:</td>
+        <td><textarea name="alamat" class="form-control"></textarea></td>
+    </tr>
+    <tr>
+        <td colspan="3"><button type="reset" class="btn">Reset</button></td>
+    </tr>
+    <tr>
+        <td colspan="3"><button type="submit" class="btn">Submit</button></td>
+    </tr>
+</form>
+</table>
+</body>
+</html>
