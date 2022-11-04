@@ -15,7 +15,7 @@
   </tr>
   <tr>
     <td>
-      <h2>{{judul2}}</h2>
+      <h2>{{ judul2 }}</h2>
       <p>Alas : <input type="text" name="Alas" placeholder="Alas" v-model="alasDinamis "></p>
       <p>Tinggi : <input type="text" name="tinggi" placeholder="Tinggi" v-model="tinggiDinamis "></p>
       <p>Menghitung Luas Segitiga:<br>
